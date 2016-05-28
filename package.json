@@ -28,7 +28,7 @@
     "express": "~3.4.4",
     "jade": "1.11.0",
     "hypixel" : "1.0.0",
-    "body-parser": "1.15.1",
+    "body-parser": "1.15.1"
   },
   "devDependencies": {},
   "bundleDependencies": [],
