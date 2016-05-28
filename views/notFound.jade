@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/sweetalert.css')
+    script(src='/stylesheets/sweetalert.min.js')
+  body
+    header
+      h1  - Try a new research
+    .container
+      .main-content
+        p
+          | The requested player was not found
+          | You'll be automaticely redirected in few seconds...
+        script.
+          swal({   title: "Player not found ! ",   text: "Try a new research :",   type: "input",   showCancelButton: true,   closeOnConfirm: false,   animation: "slide-from-top",   inputPlaceholder: "Write something" }, function(inputValue){   if (inputValue === false) return false;      if (inputValue === "") {     swal.showInputError("You need to write something!");     return false   }      swal("Nice!", "You wrote: " + inputValue, "success"); alert("imputValue");  });
+
+
+
+    footer
+      p Running on node with Express, Jade and Stylus

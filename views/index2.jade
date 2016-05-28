@@ -1,0 +1,40 @@
+html
+  head
+    //
+      Basic Page Needs
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    meta(charset='utf-8')
+    title Your page title here :)
+    meta(name='description', content='')
+    meta(name='author', content='')
+    //
+      Mobile Specific Metas
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //
+      FONT
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(href='//fonts.googleapis.com/css?family=Raleway:400,300,600', rel='stylesheet', type='text/css')
+    //
+      CSS
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/skeleton.css')
+    link(rel='stylesheet', href='css/own.css')
+    //
+      Favicon
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
+    link(rel='icon', type='image/png', href='images/favicon.png')
+  body
+    .container
+      .row
+        .six.column(style='margin-top: 15%')
+          p#titres  #{title} 's stats
+          hr
+          a#preresult  Total skywars wins: #{swgWins}
+          br
+          a#preresult  Total skywars losses: #{swgLosses}
+          br
+          a#preresult  Skywars KDR: #{swgKdr}
+          hr
+          a#preresult  Best skywars solo kit : #{bestSoloKits}
