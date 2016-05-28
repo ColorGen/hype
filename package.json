@@ -24,6 +24,8 @@
   },
   "dependencies": {
     "body-parser": "1.15.1",
+    "cookie-signature": "1.0.1",
+    "debug": "0.7.3",
     "express": "~3.4.4",
     "hypixel": "1.0.0",
     "jade": "1.11.0",
@@ -33,10 +35,9 @@
   "devDependencies": {},
   "bundleDependencies": [],
   "private": true,
-"main": "server.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-          }
-
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
