@@ -64,7 +64,7 @@ app.post('/userName',function(req,res){
         //Check if the player is in the database..
         if (!player) {
 
-            res.redirect('http://google.ch?e');
+            res.redirect('http://hype.crnt.ch?e');
 
             return;
         }
@@ -73,7 +73,7 @@ app.post('/userName',function(req,res){
         //Check if the player stats are up to date
 
         else if (typeof player.stats.SkyWars === "undefined") {
-            res.redirect('http://Google.ch?eg');
+            res.redirect('http://hype.crnt.ch?eg');
 
             return;
         }
